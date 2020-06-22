@@ -1,4 +1,18 @@
-# USAGE
+# OBJETIVE
+Ths is a Dockerfile to build a container from the latest HTTPD image with A+ Overall Rating in [SSL Labs](https://www.ssllabs.com/ssltest/index.html) with hardenized options.
+
+## PREREQUITES
+Have your own SSL Certificate in the same folder.
+```
+-rw------- 1 root root  1708 Jun 22 05:22 privkey.pem
+-rw-r--r-- 1 root root  3562 Jun 22 05:22 fullchain.pem
+-rw-r--r-- 1 root root   692 Jun 22 05:22 README.md
+-rw-r--r-- 1 root root 20929 Jun 22 05:27 httpd.conf
+-rw-r--r-- 1 root root   243 Jun 22 05:38 Dockerfile
+-rw-r--r-- 1 root root 13900 Jun 22 18:33 httpd-ssl.conf
+```
+
+## USAGE
 
 1. Just put your SSL Certificates in the same folder, in this example I use a free certificates from Letsencrypt. The `Dockerfile` will rename it in the HTTPD expected name.
 
